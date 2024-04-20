@@ -16,7 +16,7 @@ function App() {
 if(!data){
   return <div>Loading...</div>
 }
-console.log(data)
+// console.log(data)
 const payload = data.payload;
 const holdings={};
 payload.forEach((item) => {

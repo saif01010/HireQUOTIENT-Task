@@ -45,7 +45,7 @@ export default function CustomizedTables({data}) {
     
     
     const rows = Object.keys(data[0]);
-    console.log(rows)
+    // console.log(rows)
     
   return (
     <TableContainer component={Paper}>
