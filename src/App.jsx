@@ -25,7 +25,7 @@ payload.forEach((item) => {
   }
   holdings[item.asset_class].push(item);
 })
-console.log(holdings)
+// console.log(holdings)
 
   return (
       <div>
