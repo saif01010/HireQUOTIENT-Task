@@ -63,6 +63,7 @@ export default function CustomizedTables({data}) {
           {data.map((row) => (
             <StyledTableRow key={row.name}>
                 {rows.map((item,index) => {
+                    
                     return (
                         <StyledTableCell key={index}>{row[item]}</StyledTableCell>
                     )

@@ -1,18 +1,22 @@
-import { useEffect,useState } from 'react'
+// import { useEffect,useState } from 'react'
 import './App.css'
 import AccordionUsage from './components/Accordion'
 import axios from 'axios'
 
+const data = async () => {
+  const response = await axios.get('https://canopy-frontend-task.vercel.app/api/holdings')
+  return response.data
 
+}
 
 function App() {
-  const [data,setData] = useState(null)
-  useEffect(() => {
-    axios.get('https://canopy-frontend-task.vercel.app/api/holdings')
-    .then((response) => {
-      setData(response.data)
-    })
-  }, [])
+  // const [data,setData] = useState(null)
+  // useEffect(() => {
+  //   axios.get('https://canopy-frontend-task.vercel.app/api/holdings')
+  //   .then((response) => {
+  //     setData(response.data)
+  //   })
+  // }, [])
 if(!data){
   return <div>Loading...</div>
 }
